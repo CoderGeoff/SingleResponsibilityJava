@@ -30,6 +30,7 @@ public class DirectoryLexicalAnalyzer {
 	}
 	
 	public int getFrequency(String word) {
+		lazyInitialize();
 		Integer frequencyOrNull = frequency.get(word); 
 		return frequencyOrNull == null ? 0 : frequencyOrNull.intValue();
 	}

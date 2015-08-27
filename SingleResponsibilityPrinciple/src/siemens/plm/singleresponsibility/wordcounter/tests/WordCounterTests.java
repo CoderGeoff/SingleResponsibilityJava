@@ -122,8 +122,8 @@ public class WordCounterTests {
 	    // When
 	    DirectoryLexicalAnalyzer counter = new DirectoryLexicalAnalyzer(directory.getName());
 	    StringBuilder s = new StringBuilder();
-	    appendFrequency(s, "ones", counter.getFrequency("ones"));
-	    appendFrequency(s, "one", counter.getFrequency("one"));
+	    appendFrequency(s, "ones", counter.getFrequency("ones"), ", ");
+	    appendFrequency(s, "one", counter.getFrequency("one"), ", ");
 	    appendFrequency(s, "one's", counter.getFrequency("one's"));
 	    String result = s.toString();
 	
@@ -173,11 +173,14 @@ public class WordCounterTests {
 	    assertEquals(10, counter.getWordCount());
 	}
 		
+	private void appendFrequency(StringBuilder s, String word, int frequency, String separator) {
+	    appendFrequency(s, word, frequency);
+	    s.append(separator);
+	}
+	
 	private void appendFrequency(StringBuilder s, String word, int frequency) {
 	    s.append(word);
 	    s.append(": ");
 	    s.append(frequency);
-	    s.append(", ");
-
 	}
 }
