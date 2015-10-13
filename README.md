@@ -23,14 +23,14 @@ In siemens.plm.singleresponsibility.wordcounter.tests:
 
 | Class | Description |
 |-------|-------------|
-| DirectoryLexicalAnalyzerTests | The tests that describe the contract for DirectoryLexicalAnalyzer |
+| WordCounterTests | The tests that describe the contract for DirectoryLexicalAnalyzer |
 | TemporaryDirectory | A temporary directory |
 | TemporaryFile | A temporary file |
 
 DirectoryLexicalAnalyzer is an existing class and has (largely) been developed using TDD. It is known to work reliably and it has tests against it to validate its behavior. 
 
 ## Task 1 
-Read DirectoryLexicalAnalyzerTests and DirectoryLexicalAnalyzer. Make a note of areas of the code that could be improved in the implementation of DirectoryLexicalAnalyzer *and in the tests*.
+Read WordCounterTests and DirectoryLexicalAnalyzer. Make a note of areas of the code that could be improved in the implementation of DirectoryLexicalAnalyzer *and in the tests*.
 For each area you note, jot down what is wrong with it as well as the improvement that could be made.
 
 ## Task 2
